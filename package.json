@@ -1,0 +1,37 @@
+{
+  "name": "nb-server",
+  "version": "1.0.0",
+  "description": "Node Express-Mongo Server",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "babel src -s -D -d dist",
+    "start": "nodemon ./src/app.js --exec babel-node --presets env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehab05a/nb-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehab05a/nb-server/issues"
+  },
+  "homepage": "https://github.com/nehab05a/nb-server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-promise-router": "^3.0.1",
+    "joi": "^13.1.2",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.12"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.2"
+  }
+}
