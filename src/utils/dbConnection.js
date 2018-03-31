@@ -1,3 +1,4 @@
 import mongoose from 'mongoose';
+import { CONNECTION_STRING } from '../config';
 
-export default () => mongoose.connect('mongodb://nehab:N3ha%40123@ds227939.mlab.com:27939/auth-api');
+export default () => mongoose.connect(CONNECTION_STRING);

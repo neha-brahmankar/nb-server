@@ -1,6 +1,6 @@
 export default (app) => {
     app.use((req, res, next) => {
-        const err = new Error('Requested service is unvailable');
+        const err = new Error('Requested service is unavailable');
         err.status = 404;
         next(err);
     });

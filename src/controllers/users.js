@@ -14,7 +14,7 @@ export default {
         const account = await newUser.save();
         const token = tokenGenerator(newUser);
 
-        res.status(200).json({
+        res.status(201).json({
             token,
             user: {
                 email: account.email,
