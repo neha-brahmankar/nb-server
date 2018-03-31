@@ -2,7 +2,7 @@
   "name": "nb-server",
   "version": "1.0.0",
   "description": "Node Express-Mongo Server",
-  "main": "dist/app.js",
+  "main": "/",
   "scripts": {
     "build": "babel src -s -D -d dist",
     "start": "nodemon ./src/app.js --exec babel-node --presets env"
