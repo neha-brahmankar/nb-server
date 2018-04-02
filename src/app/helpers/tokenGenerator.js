@@ -1,5 +1,5 @@
 import JWT from 'jsonwebtoken';
-import { JWT_SECRET } from '../config';
+import { JWT_SECRET } from '../../config';
 
 export default (user) => JWT.sign({
     iss: 'nbServer',

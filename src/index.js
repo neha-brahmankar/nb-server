@@ -1,6 +1,6 @@
 import express from 'express';
 import { configureMiddlewares, errorHandler, dbConnection } from "./utils";
-import configureRoutes from './routes';
+import configureRoutes from './app/routes';
 import { CONNECTION_STRING } from './config';
 
 const app = express();

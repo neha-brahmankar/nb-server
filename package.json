@@ -5,7 +5,7 @@
   "main": "/",
   "scripts": {
     "build": "babel src -s -D -d dist",
-    "start": "nodemon ./src/app.js --exec babel-node --presets env"
+    "start": "nodemon ./src/index.js --exec babel-node --presets env"
   },
   "repository": {
     "type": "git",
